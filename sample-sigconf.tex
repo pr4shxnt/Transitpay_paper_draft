@@ -1,51 +1,5 @@
-%%
-%% This is file `sample-sigconf.tex',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% samples.dtx  (with options: `all,proceedings,bibtex,sigconf')
-%% 
-%% IMPORTANT NOTICE:
-%% 
-%% For the copyright see the source file.
-%% 
-%% Any modified versions of this file must be renamed
-%% with new filenames distinct from sample-sigconf.tex.
-%% 
-%% For distribution of the original source see the terms
-%% for copying and modification in the file samples.dtx.
-%% 
-%% This generated file may be distributed as long as the
-%% original source files, as listed above, are part of the
-%% same distribution. (The sources need not necessarily be
-%% in the same archive or directory.)
-%%
-%%
-%% Commands for TeXCount
-%TC:macro \cite [option:text,text]
-%TC:macro \citep [option:text,text]
-%TC:macro \citet [option:text,text]
-%TC:envir table 0 1
-%TC:envir table* 0 1
-%TC:envir tabular [ignore] word
-%TC:envir displaymath 0 word
-%TC:envir math 0 word
-%TC:envir comment 0 0
-%%
-%% The first command in your LaTeX source must be the \documentclass
-%% command.
-%%
-%% For submission and review of your manuscript please change the
-%% command to \documentclass[manuscript, screen, review]{acmart}.
-%%
-%% When submitting camera ready or to TAPS, please change the command
-%% to \documentclass[sigconf]{acmart} or whichever template is required
-%% for your publication.
-%%
-%%
 \PassOptionsToPackage{expansion=false}{microtype}
-\documentclass[sigconf, nonacm]{acmart}
+\documentclass[manuscript,review,anonymous]{acmart}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
@@ -69,59 +23,12 @@
   \providecommand\BibTeX{{%
     Bib\TeX}}}
 
-%% Rights management information.  This information is sent to you
-%% when you complete the rights form.  These commands have SAMPLE
-%% values in them; it is your responsibility as an author to replace
-%% the commands and values with those provided to you when you
-%% complete the rights form.
-\setcopyright{acmlicensed}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{XXXXXXX.XXXXXXX}
-%% These commands are for a PROCEEDINGS abstract or paper.
-% \acmConference[Conference acronym 'XX]{Make sure to enter the correct
-%   conference title from your rights confirmation email}{June 03--05,
-%   2018}{Woodstock, NY}
-%%
-%%  Uncomment \acmBooktitle if the title of the proceedings is different
-%%  from ``Proceedings of ...''!
-%%
-%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-%%  June 03--05, 2018, Woodstock, NY}
-\acmISBN{978-1-4503-XXXX-X/2018/06}
+% \setcopyright{acmlicensed}
+% \copyrightyear{2018}
+% \acmYear{2018}
+% \acmDOI{XXXXXXX.XXXXXXX}
+% \acmISBN{978-1-4503-XXXX-X/2018/06}
 
-
-%%
-%% Submission ID.
-%% Use this when submitting an article to a sponsored event. You'll
-%% receive a unique submission ID from the organizers
-%% of the event, and this ID should be used as the parameter to this command.
-%%\acmSubmissionID{123-A56-BU3}
-
-%%
-%% For managing citations, it is recommended to use bibliography
-%% files in BibTeX format.
-%%
-%% You can then either use BibTeX with the ACM-Reference-Format style,
-%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
-%% support for advanced citation of software artefact from the
-%% biblatex-software package, also separately available on CTAN.
-%%
-%% Look at the sample-*-biblatex.tex files for templates showcasing
-%% the biblatex styles.
-%%
-
-%%
-%% The majority of ACM publications use numbered citations and
-%% references.  The command \citestyle{authoryear} switches to the
-%% "author year" style.
-%%
-%% If you are preparing content for an event
-%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
-%% citations and references.
-%% Uncommenting
-%% the next command will enable that style.
-%%\citestyle{acmauthoryear}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 
@@ -132,14 +39,8 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Revolutionizing Urban Mobility: Design and Evaluation of a Contactless (NFC/HCE) Payment System for Seamless Public Transit Fare Transactions. }
+\title{Towards Fair Fares: Designing a Resilient Contactless Payment Ecosystem for Public Transit in Nepal}
 
-%%
-%% The "author" command and its associated commands are used to define
-%% the authors and their affiliations.
-%% Of note is the shared affiliation of the first two authors, and the
-%% "authornote" and "authornotemark" commands
-%% used to denote shared contribution to the research.
 \author{Prashant Adhikari}
 \email{prashant_adhikari_a25@sunway.edu.np}
 \orcid{0009-0008-6960-7907}
@@ -160,12 +61,12 @@
   \country{Nepal}}
 
 \author{Supriya Khadka}
-\email{supriya@sunway.edu.np}
+\email{skhadk@gmu.edu}
 \affiliation{%
-  \institution{Sunway College Kathmandu}
-  \city{Kathmandu}
-  \state{Bagmati}
-  \country{Nepal}}
+  \institution{George Mason University}
+  \city{Fairfax}
+  \state{Virginia}
+  \country{USA}}
 
 %%
 %% By default, the full list of authors will be used in the page
@@ -173,26 +74,48 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Prashant A.}
+\renewcommand{\shortauthors}{Adhikari et al.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Commuting in Nepal’s busiest cities, like Kathmandu and Pokhara, is often a source of daily frustration, largely because our fare systems are still stuck in a cash-only era. While many hoped QR code-based payments with Esewa or Khalti would digitize the payment infrastructure in public transportation, they’ve proven to be a headache in a moving bus, as they’re just too slow to scan and completely fall apart the moment the mobile signal drops. Our work details the development of TransitPay, a system built to bypass these hurdles using Near Field Communication (NFC) and Host Card Emulation (HCE). By combining simple, affordable hardware like the ESP8266 and PN532 alongside GPS modules such as the NEO6M with a custom Android app, we’ve created a tap-and-go setup that works for both smartphones and physical transit cards. To make sure the system stays reliable even in areas with “patchy” internet, we designed a local queuing method, which allows the hardware to process payments offline and then sync everything to the cloud once the vehicle is back in range. Furthermore, the point-of-sale-only internet requirement also solves major issues of internet unavailability in users' smartphones. While a typical QR transaction in Nepal drags on for 30 seconds and can take over a minute when the connection is poor, TransitPay hits a best-case speed of just 1.5 to 2.5 seconds, making a significant decrement in the transaction time by almost 94 percent. Even in the worst case, the process wraps up in 10 seconds, still making it efficient by decreasing the time constraint by almost 67 percent. These results prove that moving toward an NFC-based infrastructure isn’t just about new tech; it’s about making public transport faster, fairer, and finally fit for the digital age.
-
+Urban mobility in rapidly growing Nepali cities like Kathmandu and Pokhara is severely constrained by a persistent reliance on cash-based fare collection. Recent efforts to digitize public transit using general-purpose QR code wallets (such as \textit{eSewa} and \textit{Khalti}) have inadvertently introduced new infrastructural frictions. These mobile-first solutions often fail in the dynamic environment of a moving vehicle, where scanning delays and dropped cellular signals exacerbate boarding bottlenecks. To bridge this socio-technical gap, we introduce TransitPay, an equitable, offline-capable payment ecosystem using Near Field Communication (NFC) and Host Card Emulation (HCE). By intentionally designing around affordable hardware (ESP8266 and PN532) and utilizing a local data queuing architecture, the system processes transactions independently of real-time cloud connectivity. Importantly, shifting the internet requirement exclusively to the vehicle's Point-of-Sale terminal removes the burden of mobile data access from the commuter. Sandboxed evaluations demonstrate that TransitPay reduces transaction latency from a typical 30 seconds to just 1.5 to 2.5 seconds. This 94 percent reduction in wait time represents more than a technical optimization; it represents a major step toward an inclusive, resilient transit infrastructure designed specifically for the realities of the digital age.
 \end{abstract}
 
 %%
 %% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
 %% Please copy and paste the code instead of the example below.
 %%
+\begin{CCSXML}
+  <ccs2012>
+     <concept>
+         <concept_id>10010405.10010481.10010485</concept_id>
+         <concept_desc>Applied computing~Transportation</concept_desc>
+         <concept_significance>500</concept_significance>
+         </concept>
+     <concept>
+         <concept_id>10010520.10010553</concept_id>
+         <concept_desc>Computer systems organization~Embedded and cyber-physical systems</concept_desc>
+         <concept_significance>500</concept_significance>
+         </concept>
+     <concept>
+         <concept_id>10003120.10003138.10003140</concept_id>
+         <concept_desc>Human-centered computing~Ubiquitous and mobile computing systems and tools</concept_desc>
+         <concept_significance>300</concept_significance>
+         </concept>
+   </ccs2012>
+\end{CCSXML}
+  
+\ccsdesc[500]{Applied computing~Transportation}
+\ccsdesc[500]{Computer systems organization~Embedded and cyber-physical systems}
+\ccsdesc[300]{Human-centered computing~Ubiquitous and mobile computing systems and tools}
 
 
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Fintech, Public transportation, Near-Field-Technologies, Host Card Emulation, Internet of Things}
+\keywords{Urban Mobility, Digital Equity, Contactless Transit, Offline-First Architecture, Host Card Emulation}
 %% A "teaser" image appears between the author and affiliation
 %% information and the body of the document, and typically spans the
 %% page.
@@ -207,127 +130,48 @@ Commuting in Nepal’s busiest cities, like Kathmandu and Pokhara, is often a so
 \maketitle
 
 \section{Introduction}
-Urban mobility plays a crucial role in the social and economic development of developing countries like Nepal. Rapid urbanization, especially in cities such as Kathmandu, Lalitpur, and Pokhara, has led to a significant increase in the use of public transportation systems, including buses, microbuses, and tempo services. However, Nepal’s public transit fare collection system is still largely dependent on cash-based transactions, which often result in inefficiencies such as long boarding times, fare disputes, revenue leakage, lack of transparency, and inconvenience for both passengers and transport operators.
+Consider a commuter navigating a crowded microbus in Kathmandu.  In a valley where over 90\% of the public transit fleet consists of low-capacity minibuses and microbuses, the conductor must squeeze through a packed aisle to collect physical currency~\cite{jica2017kathmandu_transport,aryal2022strong}. This manual process routinely leads to fare disputes and severe revenue leakage, with reports indicating that conductors often hand over only half of their actual daily collections to vehicle owners~\cite{annapurnaexpress2026article}. Because Nepal's public transit remains almost entirely dependent on cash, the entire urban mobility network suffers from severe boarding bottlenecks. When the payment process stalls, the daily dignity and economic mobility of the 28\% of valley residents who rely on this infrastructure are significantly restricted~\cite{jica2017kathmandu_transport}.
 
-With the growing penetration of smartphones, digital wallets, and contactless technologies in Nepal, there is a strong opportunity to modernize public transportation payment systems. Technologies such as Near Field Communication (NFC) and Host Card Emulation (HCE) enable secure, fast, and contactless fare payments using smartphones or smart cards without the need for physical cash. Several countries have successfully implemented contactless fare systems to improve passenger convenience, operational efficiency, and financial accountability. However, Nepal has been slow in adopting such technologies in its public transport sector due to infrastructural, regulatory, and awareness-related challenges.
+While digital wallets like \textit{eSewa} and \textit{Khalti} have successfully modernized retail in Nepal, public transit presents a uniquely hostile environment for standard mobile payments. The core issue is severe boarding latency. Commuters attempting to scan a QR code face transaction times that can drag on for up to 30 seconds. More critically, these mobile-first systems require continuous cellular data and completely fall apart when a moving vehicle enters a network blind spot~\cite{gupta2022m}. Because Nepal's broadband infrastructure is highly inconsistent, these digital attempts often fail, forcing commuters and conductors back to manual cash handling.
 
-The Government of Nepal and private financial institutions have recently promoted digital payment platforms as part of the national digital economy initiative. Despite this progress, the integration of digital payment systems into public transit remains limited and fragmented. A unified, contactless fare payment system could significantly enhance the urban transit experience by reducing boarding time, minimizing human error, improving data collection for transit planning, and supporting cashless economic policies.
+Previous attempts to digitize transit fares in the region have recognized the need for faster technologies but have seen limited success. Initiatives like Sajha Yatayat's smart cards~\cite{annapurnaexpress2026article} and the Yatra Card~\cite{fintech2023yatra} introduced NFC technology for a faster tap-in and tap-out experience. However, these implementations operate strictly as closed-loop systems. A proprietary card for one bus network cannot be used on a private microbus, failing to solve the interoperability gap. Furthermore, while the National Payment Switch integrates retail wallets, it currently lacks a standardized API for cross-operator transit fare settlement.
 
+To bridge this socio-technical gap, we detail the development of TransitPay, an equitable, offline-capable payment ecosystem built using Near Field Communication (NFC) and Host Card Emulation (HCE). By intentionally designing around simple, affordable hardware, specifically the ESP8266~\cite{esp8266soc} and PN532~\cite{nxp2016pn532}, we created a system that shifts the internet requirement exclusively to the vehicle's Point-of-Sale terminal. Utilizing a local data queuing architecture, the system processes transactions securely offline and synchronizes with the cloud only when the vehicle regains cellular range. To ensure economic fairness, the system also integrates a GPS module to track boarding and alighting coordinates automatically.
 
-\section{Literature Review}
-Public transportation in Nepal remains heavily reliant on fragmented, cash-based fare collection. This manual system is plagued by operational inefficiencies, including widespread fare evasion and a lack of pricing consistency~\cite{shreya2025nepal}. Furthermore, the absence of digital transaction records deprives transport authorities of the real-time ridership data necessary for effective urban planning and service optimization (Coseco Services, n.d.) \cite{coseco_services_working_nodate}. As urban centers like Kathmandu grow, the need for a seamless, transparent, and data-driven payment ecosystem becomes critical.
-
-\subsection{The introduction of NFC in the tech world}
-
-Near Field Communication (NFC) originated from the groundwork of Radio-Frequency Identification (RFID), evolving into a specialized protocol for secure, short-range interaction. The modern tech world saw the official birth of this standard through a 2002 collaboration between Sony and Philips, which eventually led to the 2004 establishment of the NFC Forum~\cite{kaiser2017nfc}. This standardization was essential for defining the 13.56 MHz frequency and the ISO/IEC 18092 standards that allow for seamless data exchange between active and passive devices~\cite{singh2020near}. By limiting communication to a range of approximately 4 cm, the technology ensures that data transfer is both intentional and secure, moving NFC from niche industrial use to a consumer-facing interface.
-
-The integration of NFC into mobile hardware transformed smartphones into digital hubs, moving beyond simple communication to facilitate a "cashless society." While early devices like the Nokia 6131 pioneered the hardware, the momentum shifted significantly with the launch of major digital wallets, which utilized the device's magnetic field induction principles for secure transactions~\cite{nikam2017near}. This era introduced the ability to store encrypted tokens on mobile devices, allowing users to replace physical cards with a single tap. As adoption grew, consumer behavior began to shift based on increased trust and self-efficacy in these mobile payment models, cementing NFC as a global retail standard~\cite{aloufi2025investigating}.
-
-Today, NFC has matured into a ubiquitous technology that underpins the modern IoT (Internet of Things) ecosystem and public infrastructure. Current industry roadmaps highlight an evolution toward "multi-purpose taps" and increased range, expanding its utility into smart home integration, automotive digital keys, and identity verification~\cite{staff2023nfc}. Recent studies indicate a "device-first" approach where consumers increasingly rely on NFC for everything from public transit to authenticated supply chain logistics~\cite{nfcforum2024device}. This ongoing development ensures that the technology remains a vital driver of "tap-and-go" convenience across various sectors of the digital economy.
-
-\subsection{The early use of NFC}
-
-The early use of Near Field Communication (NFC) was defined by experimental pilot programs and the first wave of hardware integration that sought to prove the concept of a "mobile wallet." While the technology was standardized in 2004, its practical debut occurred in 2006 with the release of the Nokia 6131 NFC, the first mass-market phone to feature a built-in NFC chip~\cite{nokia2007nfc}. Early use cases were not limited to payments; they focused on the "just touch" philosophy to simplify complex tasks. In 2007, a landmark trial in London partnering Nokia, Barclays, and Transport for London which allowed participants to use their mobile devices as both a prepaid Visa card and an Oyster transit card~\cite{kaiser2017nfc}. This period demonstrated that NFC could successfully merge financial services with public infrastructure through a single physical gesture.
-
-Before it became a standard feature in every smartphone, early NFC applications explored the "Reader/Writer" and "Peer-to-Peer" modes to bridge the gap between physical objects and digital data. In 2006, some of the first commercial applications included using NFC-enabled stickers or "tags" in libraries to assist disabled patrons in accessing resources~\cite{lathiya2021near}. By 2010, the telecommunications sector had launched over 100 pilot projects worldwide, testing everything from "Smart Posters" that triggered web links when tapped to hotel room entry systems~\cite{tardi2023near}. These early implementations were critical for identifying the technical requirements for magnetic field induction and active/passive communication, ensuring that the devices could operate reliably within the strict 4 cm range required for security~\cite{singh2020near}
-
-The transition from experimental trials to mainstream utility was marked by the launch of the Samsung Nexus S in 2010, the first Android device to fully integrate NFC, which paved the way for Google Wallet in 2011~\cite{tragging2023history}. This era saw the introduction of programmable tags, such as Samsung TecTiles (2012) and Sony’s Xperia SmartTags, which allowed users to automate phone settings, like turning on an alarm or silencing a ringer, by tapping their device against a physical sticker~\cite{lathiya2021near}. These early consumer-led uses were essential for socializing the "tap" gesture among the public, moving the technology away from its industrial RFID roots and toward the intuitive, frictionless experience that defines modern digital interaction.
-
-
-\subsection{Host Card Emulation and early implementation}
-
-The early era of Near Field Communication (NFC) was defined by a hardware-centric model known as the Secure Element (SE), which created a period of significant market fragmentation often referred to as the "Secure Element wars." In this framework, sensitive payment credentials were required to be stored in a physical, tamper-resistant microchip, which could reside in the phone's SIM card, an embedded chip (eSE), or a microSD card~\cite{lepojevic2014implementing}. This early implementation forced service providers, such as banks, to negotiate complex commercial agreements with Mobile Network Operators (MNOs) to gain access to the "keys" of the SIM-based SE~\cite{thales2023host}. Consequently, mass adoption was stifled by these gatekeepers, as carriers often blocked competing digital wallets to promote their own proprietary services, such as the ill-fated Softcard (formerly Isis) venture in the United States.
-
-A transformative shift occurred in 2013 with the introduction of Host Card Emulation (HCE) in Android 4.4 (KitKat). Developed to bypass the reliance on physical hardware and carrier control, HCE allowed the smartphone's main operating system to emulate a smart card using software rather than a dedicated hardware chip~\cite{nikam2017near}. This architecture routes the NFC protocol directly to the host CPU, enabling any application to act as a virtual contactless card by leveraging "cloud-based SE" models. By moving the security layer from the physical device to the cloud, HCE effectively "democratized" NFC development, allowing banks and transit authorities to launch mobile wallets independently of mobile carriers~\cite{prakash2015host}.
-
-While HCE provided the flexibility needed for global scaling, it introduced new security challenges since the host operating system is generally more vulnerable to software attacks than a hardware-isolated SE. To mitigate these risks, modern HCE implementations rely heavily on tokenization and Limited Use Keys (LUKs), which ensure that even if a transaction's data is intercepted, it cannot be reused for subsequent payments~\cite{crowe2016understanding}. Today, the industry has largely settled on a hybrid approach; while Apple Pay continues to use a hardware-embedded Secure Element for maximum security, most Android-based wallets use HCE to ensure compatibility across a vast range of hardware, demonstrating how software-based emulation saved NFC from a future of carrier-controlled silos~\cite{whitepaperhce}.
-
-
-\subsubsection{Regional Adoption Trends of NFC based payments}
-
-The adoption of NFC payments varies significantly by geography, driven by local infrastructure and regulatory support:
-
-
+This work is guided by two primary research questions:
 \begin{itemize}
-    \item \textbf{Europe:} Leads in retail penetration, with nearly 90\% of all retail transactions being contactless in 2026~\cite{ejimone2025contactless}. Countries such as the UK and Ireland report that over 60\% of these transactions are made specifically via smartphones rather than plastic cards.
-    
-    \item \textbf{Asia--Pacific:} Remains the largest market by transaction volume, contributing roughly 40\% of all global NFC transactions~\cite{dey2025nfc}. While QR codes historically dominated in China and India, NFC is surging in Southeast Asia, with countries like the Philippines, Thailand, and Vietnam projected to reach 75\% digital wallet penetration by late 2026~\cite{juniper2022digital}.
-    
-    \item \textbf{North America:} Accounts for roughly 36\% of global demand share, dominated by the ``Big Three'' OEM wallets: Apple Pay, Google Pay, and Samsung Pay. The U.S.\ has seen a rapid shift among Gen~Z and Millennials, with 70\% of these demographics using NFC as their primary shopping method.
+  \item \textbf{RQ1}: How can an offline-first NFC architecture reduce boarding latency and improve payment resilience in resource-constrained transit environments?
+
+  \item \textbf{RQ2}: How does an automated, location-based payment model impact the transparency and economic fairness of fare collection for daily commuters?
+\end{itemize}
+
+To address these questions, we offer three main contributions to the field of sustainable urban computing:
+\begin{itemize}
+  \item The design and implementation of TransitPay, an affordable (NPR 3000) IoT hardware architecture tailored specifically to bypass intermittent internet connectivity via local data queuing.
+  \item The introduction of a ``Fair Fare Model'' that utilizes onboard GPS coordinates to automatically calculate distance-based pricing, eliminating manual revenue leakage and protecting passengers from arbitrary overcharging.
+  \item Sandboxed empirical evaluations demonstrating that this system achieves a best-case transaction speed of 1.5 to 2.5 seconds, reducing wait times by 94 percent compared to existing QR methods.
 \end{itemize}
 
 
-\subsubsection{Emerging Use Cases and Infrastructure}
+\section{Related Works}
 
+\subsection{Digital Fare Collection in the Global South}
+Across the Global South, public transportation frequently relies on decentralized, semi-formal fleets like minibuses, jeepneys, or matatus~\cite{jica2017kathmandu_transport}. The transition from cash-based fare collection to digital payment ecosystems in these environments presents many infrastructural challenges. While QR code payments have historically dominated the broader retail sectors in large markets such as India and China~\cite{}, deploying these optical systems in dynamic, moving transit environments often introduces bottlenecks~\cite{}.
 
-The current market is moving beyond simple retail transactions toward integrated ``Smart City'' ecosystems. A key trend in 2026 is the rise of \textit{SoftPOS} (Software Point-of-Sale), which allows merchants to turn any standard NFC-enabled smartphone into a payment terminal without additional hardware---a technology that saw a 234\% increase in transactions in certain markets over the last year~\cite{valero2025rise}.
+Currently, there is a notable shift toward NFC technologies in developing regions to address these frictions. Southeast Asia is experiencing a massive surge in NFC adoption, with countries like the Philippines, Thailand, and Vietnam projected to reach 75 percent digital wallet penetration by late 2026~\cite{juniper2022digital}. As these nations attempt to integrate digital payments into their transit networks, direct comparisons between QR and NFC methods have become vital. Research on mobile fare payment systems shows that QR-code ticketing can increase boarding service time due to scanning procedures and recognition delays, sometimes causing crowding at transit entry points, whereas NFC-based ``tap-and-go'' systems validate transactions in around 100-120 ms and enable faster passenger throughput~\cite{chen2020influence}.
 
-Furthermore, the introduction of \textit{Multi-Purpose Taps} allows a single gesture to process a payment, apply a loyalty discount, and issue a digital receipt simultaneously. This integration is particularly prominent in public transit and the circular economy, where ``regenerative payment loops'' incentivize sustainable consumer choices through microtransactions~\cite{hyman2025future}.
+\subsection{The Offline-First Imperative for Financial Inclusion}
+A core challenge in deploying transit fintech in the Global South is the assumption of continuous, ubiquitous internet connectivity. Many modern mobile wallets rely entirely on real-time cloud authorization to process transactions~\cite{}. This design choice inherently introduces friction in resource-constrained environments, creating a barrier to true financial inclusion for users who cannot afford consistent mobile data plans or who are traveling through network dead zones. In Nepal, for instance, weak last-mile connectivity and patchy broadband heavily restrict the reliability of real-time cloud payments on moving vehicles~\cite{kharel2025digital}. 
 
-\subsection{Use of NFC and RFID in Transportation Management}
+To combat infrastructural fragility, researchers in Information and Communication Technology for Development (ICTD) increasingly advocate for ``offline-first'' architectures~\cite{}. By localizing data processing to the edge device, systems can ensure transaction resilience even when the broader network fails~\cite{}. TransitPay integrates this philosophy directly into its hardware and software design. By utilizing a local data queuing method on the ESP8266 microcontroller, the system deliberately shifts the connectivity burden away from the commuter's smartphone and onto the vehicle's Point-of-Sale terminal. This localized processing ensures that digital public goods remain accessible, equitable, and functional, regardless of fluctuating cellular signals.
 
-In Nepal, the adoption of NFC and RFID in transportation has shifted from experimental pilot phases to becoming mandatory national infrastructure. While RFID is primarily used for long-range vehicle identification and tracking, NFC is utilized for short-range passenger interactions and transit payments.
+\subsection{Digital Transit Infrastructure in Nepal}
 
-\subsubsection{RFID: National Vehicle Tracking and Embossed Plates}
+To address these global challenges locally, recent initiatives in Nepal have attempted to digitize urban transit using Near Field Communication (NFC). NFC is a short-range wireless technology that enables secure, instant data exchange between active and passive devices separated by just a few centimeters, making it the standard for frictionless ``tap-and-go'' payments~\cite{singh2020near}. In Kathmandu, operators like Sajha Yatayat and Fintech International have introduced NFC-enabled smart cards (such as the Yatra Card) to calculate distance-based fares and reduce revenue leakage~\cite{fintech2023yatra, annapurnaexpress2026article}. 
 
-The most significant implementation of RFID in Nepal is the Electronic Vehicle Number Plate (EVNP) system, commonly known as embossed number plates.
+However, these solutions operate strictly as closed-loop systems. A proprietary card issued for one network cannot be utilized on a private microbus, failing to solve the interoperability gap for the average commuter, especially since the National Payment Switch currently lacks a standardized transit API~\cite{nrb2025paymentoversight}. To bypass this fragmentation, commuters frequently attempt to use ubiquitous mobile wallets (such as \textit{eSewa} or \textit{Khalti}) that rely on QR codes. Unfortunately, direct comparisons reveal that manual QR scanning in dynamic transit environments routinely takes over 10 seconds, causing severe passenger stacking at bus doors~\cite{chen2020influence}. Furthermore, because these mobile-first systems lack offline data queuing, they frequently fail when moving vehicles cross network blind spots~\cite{kharel2025digital}. 
 
-\begin{itemize}
-    \item \textbf{Mandatory Integration:} As of September 17, 2025, the Department of Transport Management (DoTM) made embossed number plates mandatory for all new registrations, ownership transfers, and renewals. The decision was later withdrawn due to widespread public backlash~\cite{khatri2025embossed}.
-    
-    \item \textbf{The RFID Chip:} Each plate contains a high-security RFID microchip that stores the vehicle’s unique registration data, engine number, and owner details~\cite{omoda2025embossed}.
-    
-    \item \textbf{Security \& Infrastructure:} The government has initiated the construction of 100 RFID gates across the country, with operational gates already installed at key entry points such as Nagdhunga and Nagarjun. These gates automatically scan vehicles as they pass, enabling real-time traffic monitoring and assisting law enforcement in tracking stolen vehicles without requiring physical stops~\cite{khatri2025embossed}.
-\end{itemize}
-
-
-\subsubsection{NFC: Smart Ticketing and the "Yatra Card"}
-
-In the public transit sector, NFC technology is used to facilitate contactless payments, aiming to reduce "revenue leakage," where conductors might not report full cash earnings.
-
-\begin{itemize}
-    \item \textbf{Sajha Yatayat and Smart Cards:}  Sajha Yatayat pioneered the Smart Travel Card system in Kathmandu. Passengers tap an NFC card on readers located at the bus doors upon entry and exit. The system automatically calculates the fare based on the distance traveled~\cite{shreya2025nepal}.
-    
-    \item \textbf{The Yatra Card:} Fintech International’s Yatra Card is a prominent NFC-enabled smart card in Nepal. It allows commuters to store up to Rs. 25,000 and can be topped up via mobile wallets or bank accounts. It is designed specifically for a "tap-in, tap-out" experience, providing a printed or digital receipt of the fare deducted~\cite{fintech2023yatra}.
-    
-    \item \textbf{Digital Address System (DAS):} In 2025, the Kathmandu Metropolitan City (KMC) also launched an NFC-based digital address system in Ward No. 26. While not directly for "moving" transport, these plates are placed on houses near transport hubs (like the New Bus Park) to provide digital location data for logistics and emergency services~\cite{bhatta2025kathmandu}.
-\end{itemize}
-
-\subsection{Existing potential Fintech System in Transportation and gaps}
-
-The digital payment landscape in Nepal has seen a "mobile-first" explosion, with over a 23-fold increase in Payment Service Provider (PSP) agents by 2025 (Kanya Journal, 2025). However, the application of this growth to urban transit remains inefficient.
-
-\subsubsection{Direct Comparison of Transit Modalities}
-
-The table below outlines the technological differences between current systems and the requirements for a seamless transit ecosystem.
-
-
-\begin{table}[H]
-\centering
-\caption{Feature Comparison Between Traditional QR and NFC Enabled Cards}
-\begin{tabular}{lll}
-\toprule
-\textbf{Feature} & \textbf{Esewa/Khalti QR} & \textbf{Smart Cards} \\
-\midrule
-Transaction Speed & Slow (15--30 sec) & Fast ($<$ 5s) \\
-User Onboarding   & Digital (App) & Physical (Card) \\
-Security          & Low (Raw data) & High (Secured) \\
-Hardware Cost     & Low (QR prints) & High (POS) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsubsection{Identified Gaps in Nepal's Ecosystem} \mbox{} \\
-
-\textbf{The Interoperability Gap:} Existing smart cards are "Closed-Loop," meaning a Sajha card cannot be used on a private microbus. While the National Payment Switch (NPS) has integrated retail wallets, it lacks a standardized "Transit API" for cross-operator fare settlement~\cite{nrb2024payment}.
-
-\begin{itemize}
-    \item \textbf{The "Boarding Latency" Gap:} Research shows that QR code adoption in Kathmandu is high for retail but fails in transit because "Transaction Failure" is the biggest concern for mobile users (ResearchGate, 2024). Manual QR scanning takes over 10 seconds, causing "stacking" at bus doors, whereas NFC-based systems reduce this to milliseconds~\cite{harnaningrum2024comparison}.
-
-    \item \textbf{The Information Deficit Gap:} Commuters in Kathmandu express a "high desirability" for digital help because they cannot track routes or fares in real-time (St. Xavier's Transit Survey, 2023). Existing fintech only handles the payment but fails to provide the ridership data needed for navigation~\cite{ghimire2023issues}.
-
-    \item \textbf{The Resilience/Infrastructure Gap:} Nepal’s "patchy broadband" and weak last-mile connectivity limit real-time cloud payments (Digital Economy \& Financial Innovation Report, 2025). Current systems lack the "Offline Data Queuing" necessary for a moving vehicle crossing network blind spots~\cite{kharel2023digital}.
-\end{itemize}
+TransitPay builds upon these foundational efforts by utilizing Host Card Emulation (HCE) to emulate NFC cards via software~\cite{alattar2014host, alliance2014host}. This approach merges the interoperability of a mobile application with the offline resilience and speed of a physical NFC smart card, engineering a solution specifically tailored for Nepal's fragmented and connectivity-constrained transit ecosystem.
 
 \section{Methodology}
 
@@ -381,7 +225,7 @@ Near Field Technologies is proven to be effective for communication over a very 
 %     \label{fig:mifare_desfire}
 % \end{figure}
 
-However, as the technologies evolve, our smartphones are also able to emulate themselves as an NFC card using Host Card Emulation (HCE)~\cite{hceoverview}. This system is explicitly tested using an Android phone. The TransitPay application, built using React Native, used APDU commands to communicate with the Payment Operating System. The application was tested using the AID number: D2760000850101. The KHostApduServices.kt and MainApplication.kt communicate with the IoT-embedded point of sale (POS) terminal.
+However, as the technologies evolve, our smartphones are also able to emulate themselves as an NFC card using Host Card Emulation (HCE)~\cite{alliance2014host}. This system is explicitly tested using an Android phone. The TransitPay application, built using React Native, used APDU commands to communicate with the Payment Operating System. The application was tested using the AID number: D2760000850101. The KHostApduServices.kt and MainApplication.kt communicate with the IoT-embedded point of sale (POS) terminal.
 
 
 \subsubsection{Point Of Sale Terminal} \mbox{} \\
