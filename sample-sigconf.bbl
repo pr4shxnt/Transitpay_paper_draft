@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{18}
+\begin{thebibliography}{21}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -124,6 +124,17 @@
 \newblock
 
 
+\bibitem[De~Seta(2023)]%
+        {de2023qr}
+\bibfield{author}{\bibinfo{person}{Gabriele De~Seta}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{QR code: The global making of an infrastructural
+  gateway}.
+\newblock \bibinfo{journal}{\emph{Global Media and China}} \bibinfo{volume}{8},
+  \bibinfo{number}{3} (\bibinfo{year}{2023}), \bibinfo{pages}{362--380}.
+\newblock
+
+
 \bibitem[{Espressif Systems}(2015)]%
         {esp8266soc}
 \bibfield{author}{\bibinfo{person}{{Espressif Systems}}.}
@@ -174,6 +185,17 @@
 \newblock \showarticletitle{M-Commerce offline payment}.
 \newblock \bibinfo{journal}{\emph{SN Computer Science}} \bibinfo{volume}{3},
   \bibinfo{number}{1} (\bibinfo{year}{2022}), \bibinfo{pages}{100}.
+\newblock
+
+
+\bibitem[Iyengar and Pearson(2024)]%
+        {iyengar2024edge}
+\bibfield{author}{\bibinfo{person}{Ashok Iyengar} {and} \bibinfo{person}{Joseph
+  Pearson}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Edge Computing Patterns for Solution
+  Architects: Learn methods and principles of resilient distributed application
+  architectures from hybrid cloud to far edge}}.
+\newblock \bibinfo{publisher}{Packt Publishing Ltd}.
 \newblock
 
 
@@ -276,6 +298,18 @@
 \tempurl}
 \newblock
 \shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[Townsend(2019)]%
+        {townsend2019distributed}
+\bibfield{author}{\bibinfo{person}{Robert~M Townsend}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Distributed ledgers: Innovation and regulation in
+  financial infrastructure and payment systems}.
+\newblock \bibinfo{journal}{\emph{URL: http://www. robertmtownsend.
+  net/sites/default/files/files/papers/working\_papers/Dis tributed\%
+  20Ledgers-first\% 20circulation-041819. pdf}} (\bibinfo{year}{2019}).
+\newblock
 
 
 \end{thebibliography}

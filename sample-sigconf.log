@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  19 MAR 2026 10:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  19 MAR 2026 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,136 +1162,131 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [2.2]
 
 [3.3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <9> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 224.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \vbox (badness 2073) has occurred while \output is active []
 
 
 
 [4.4]
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 222.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
-
- []
-
-
-Underfull \vbox (badness 1968) has occurred while \output is active []
 
 
 
 [5.5]
 
-Class acmart Warning: A possible image without description on input line 313.
+Class acmart Warning: A possible image without description on input line 315.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--327
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--327
+Underfull \hbox (badness 10000) in paragraph at lines 323--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--329
 
  []
 
 
 
 [6.6]
-Underfull \hbox (badness 10000) in paragraph at lines 332--335
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--345
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
  []
 
 
 
 [7.7]
-Underfull \hbox (badness 10000) in paragraph at lines 351--353
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[8.8]
-Overfull \hbox (90.52484pt too wide) in paragraph at lines 391--405
+Overfull \hbox (90.52484pt too wide) in paragraph at lines 393--407
  [][] 
  []
 
 
 
+[8.8]
+
 [9.9]
-Overfull \hbox (9.6708pt too wide) in paragraph at lines 445--446
+Overfull \hbox (9.6708pt too wide) in paragraph at lines 447--448
 \OT1/cmr/m/n/9 This sec-tion gives a de-tailed cost re-view and break-down of p
 re-development, in-development, post-development,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--464
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
 []|\OT1/cmr/m/n/9 LCD dis-
  []
 
 
+
+[10.10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[10.10]
-
 [11.11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [12.12]
+Package pgfplots info on input line 606: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+
+Class acmart Warning: A possible image without description on input line 617.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [13.13]
-Package pgfplots info on input line 604: Using 'lua backend=false' for axis: x 
-coord trafo unsupported.
-
-
-Class acmart Warning: A possible image without description on input line 615.
-
-
 
 [14.14] Excluding 'acks' comment. (./sample-sigconf.bbl
-Underfull \vbox (badness 1259) has occurred while \output is active []
-
+LaTeX Info: Redefining \tempurl on input line 160.
+LaTeX Info: Redefining \tempurl on input line 210.
+LaTeX Info: Redefining \tempurl on input line 225.
+LaTeX Info: Redefining \tempurl on input line 240.
 
 
 [15.15]
-LaTeX Info: Redefining \tempurl on input line 149.
-LaTeX Info: Redefining \tempurl on input line 188.
-LaTeX Info: Redefining \tempurl on input line 203.
-LaTeX Info: Redefining \tempurl on input line 218.
-LaTeX Info: Redefining \tempurl on input line 233.
-LaTeX Info: Redefining \tempurl on input line 249.
-LaTeX Info: Redefining \tempurl on input line 274.
+LaTeX Info: Redefining \tempurl on input line 255.
+LaTeX Info: Redefining \tempurl on input line 271.
+LaTeX Info: Redefining \tempurl on input line 296.
 )
 
 Class acmart Warning: Some images may lack descriptions.
@@ -1322,13 +1317,13 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `sample-sigconf.out' has not changed.
-(rerunfilecheck)             Checksum: DBDD6E07E67D57AEC315604D0C42F6E5;5040.
+(rerunfilecheck)             Checksum: 2A5C85D576D0C0F9873C821BBE8CC390;4779.
  ) 
 Here is how much of TeX's memory you used:
- 39111 strings out of 475102
- 883302 string characters out of 5764877
- 1484358 words of memory out of 5000000
- 61199 multiletter control sequences out of 15000+600000
+ 39122 strings out of 475102
+ 883572 string characters out of 5764877
+ 1483358 words of memory out of 5000000
+ 61208 multiletter control sequences out of 15000+600000
  569873 words of font info for 76 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  90i,19n,131p,1432b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1350,10 +1345,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on sample-sigconf.pdf (16 pages, 312181 bytes).
+Output written on sample-sigconf.pdf (16 pages, 315427 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
- 10985 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 395 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 10977 words of extra memory for PDF output out of 12000 (max. 10000000)
 
