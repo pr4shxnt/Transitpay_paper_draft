@@ -80,7 +80,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Urban mobility in rapidly growing Nepali cities like Kathmandu and Pokhara is severely constrained by a persistent reliance on cash-based fare collection. Recent efforts to digitize public transit using general-purpose QR code wallets (such as \textit{eSewa} and \textit{Khalti}) have inadvertently introduced new infrastructural frictions. These mobile-first solutions often fail in the dynamic environment of a moving vehicle, where scanning delays and dropped cellular signals exacerbate boarding bottlenecks. To bridge this socio-technical gap, we introduce TransitPay, an equitable, offline-capable payment ecosystem using Near Field Communication (NFC) and Host Card Emulation (HCE). By intentionally designing around affordable hardware (ESP8266 and PN532) and utilizing a local data queuing architecture, the system processes transactions independently of real-time cloud connectivity. Importantly, shifting the internet requirement exclusively to the vehicle's Point-of-Sale terminal removes the burden of mobile data access from the commuter. Sandboxed evaluations demonstrate that TransitPay reduces transaction latency from a typical 30 seconds to just 1.5 to 2.5 seconds. This 94 percent reduction in wait time represents more than a technical optimization; it represents a major step toward an inclusive, resilient transit infrastructure designed specifically for the realities of the digital age.
+Urban mobility in rapidly growing Nepali cities like Kathmandu and Pokhara is severely constrained by a persistent reliance on cash-based fare collection. Recent efforts to digitize public transit using general-purpose QR code wallets (such as \textit{eSewa} and \textit{Khalti}) have inadvertently introduced new infrastructural frictions. These mobile-first solutions often fail in the dynamic environment of a moving vehicle, where scanning delays and dropped cellular signals exacerbate boarding bottlenecks. To bridge this socio-technical gap, we introduce \emph{TransitPay}, an equitable, offline-capable payment ecosystem using Near Field Communication (NFC) and Host Card Emulation (HCE). By intentionally designing around affordable hardware (ESP8266 and PN532) and utilizing a local data queuing architecture, the system processes transactions independently of real-time cloud connectivity. Importantly, shifting the internet requirement exclusively to the vehicle's Point-of-Sale terminal removes the burden of mobile data access from the commuter. Sandboxed evaluations demonstrate that \emph{TransitPay} reduces transaction latency from a typical 30 seconds to just 1.5 to 2.5 seconds. This 94 percent reduction in wait time represents more than a technical optimization; it represents a major step toward an inclusive, resilient transit infrastructure designed specifically for the realities of the digital age.
 \end{abstract}
 
 %%
@@ -167,10 +167,7 @@ A core challenge in deploying transit fintech in the Global South is the assumpt
 
 To combat infrastructural fragility, researchers in ICTD increasingly advocate for ``offline-first'' architectures~\cite{iyengar2024edge}. By localizing data processing to the edge device, systems can ensure transaction resilience even when the broader network fails~\cite{iyengar2024edge}. TransitPay integrates this philosophy directly into its hardware and software design. By utilizing a local data queuing method on the ESP8266 microcontroller, the system deliberately shifts the connectivity burden away from the commuter's smartphone and onto the vehicle's Point-of-Sale terminal. This localized processing ensures that digital public goods remain accessible, equitable, and functional, regardless of fluctuating cellular signals.
 
-
 \subsection{Digital Transit Infrastructure in Nepal}
-
-
 To address these global challenges locally, recent initiatives in Nepal have attempted to digitize urban transit using Near Field Communication (NFC). NFC is a short-range wireless technology that enables secure, instant data exchange between active and passive devices separated by just a few centimeters, making it the standard for frictionless ``tap-and-go'' payments~\cite{singh2020near}. In Kathmandu, operators like Sajha Yatayat and Fintech International have introduced NFC-enabled smart cards (such as the Yatra Card) to calculate distance-based fares and reduce revenue leakage~\cite{fintech2023yatra, annapurnaexpress2026article}. 
 
 Beyond fare media, related work has begun to treat transit and mobility infrastructure as shared digital public goods. Bolten and Caspi, for instance, describe a communal, open-data approach to constructing detailed pedestrian networks to support accessibility analysis and inclusive routing at city scale~\cite{bolten2022towards}. Similarly, the BALTO Toolkit positions rider-generated data as a basis for more equitable transit planning and community advocacy in U.S.\ cities~\cite{frias2023balto}. We build on this perspective by proposing fare-collection infrastructure that is designed from the outset to be interoperable across operators and to reduce information asymmetries between commuters, conductors, and vehicle owners.
@@ -179,6 +176,33 @@ However, existing NFC-based solutions in Nepal operate strictly as closed-loop s
 
 TransitPay builds upon these foundational efforts by utilizing Host Card Emulation (HCE) to emulate NFC cards via software~\cite{alattar2014host, alliance2014host}. This approach merges the interoperability of a mobile application with the offline resilience and speed of a physical NFC smart card, engineering a solution specifically tailored for Nepal's fragmented and connectivity-constrained transit ecosystem.
 
+\section{Formative Study and Local Context}
+The core premise of TransitPay is that sustainable urban computing must directly address local human friction. To transition this project from a theoretical payment gateway into a practical socio-technical intervention, we first needed to map the lived experiences of Nepal's transit users. Through a human-centered design paradigm, we investigated the specific infrastructural limitations and behavioral anxieties that currently block the adoption of digital transit fares.
+
+\subsection{Methodology}
+
+We conducted a preliminary, mixed-method formative study targeting regular and former public transportation users in Kathmandu. The study utilized a structured survey instrument (N=32) designed to capture both quantitative metrics and qualitative narratives regarding the current cash-based and QR-based payment ecosystems. The survey consisted of closed-ended Likert-scale questions to measure user acceptance of digital wallet integration, alongside open-ended questions allowing respondents to describe their personal experiences with cash handling, conductor interactions, and physical crowding.
+
+The demographic breakdown consisted of 26 undergraduate students, one senior citizen, and five non-student commuters. Among the respondents, 24 utilize public transit regularly. The remaining eight participants reported reducing or completely abandoning their public transit usage, frequently citing systemic frictions as the primary deterrent.
+
+\subsection{Identified Frictions and Problem Classification}
+Through thematic analysis of the survey responses, we classified the commuters' challenges into three primary socio-technical frictions. Instead of treating these issues as isolated operational complaints, we systematically coded the qualitative data to extract the root causes of transaction failures. These identified problems directly informed the engineering requirements for the TransitPay architecture, allowing us to map subjective user frustrations directly to objective hardware and software interventions.
+
+\subsubsection{Friction 1: The Boarding Bottleneck and Cash Dependency}
+The most prominent challenge reported by users was the physical discomfort and severe latency caused by manual cash transactions inside crowded vehicles. Our quantitative data reveals that 22 out of the 24 regular commuters consistently faced cash-related problems with conductors. Commuters highlighted a persistent lack of change availability during peak travel hours, which stalls the boarding process and creates immense psychological friction.
+
+As one respondent noted, \textit{``Most of the times conductor replies with the statement `I don't have any change I'll return it to you as soon as I get it' and it stresses me throughout my journey.''} The severity of this issue is underscored by the fact that multiple non-regular commuters reported abandoning public transit entirely in favor of private ride-sharing simply to avoid the daily hassle of carrying exact cash. This highlights the necessity for a frictionless, rapid payment mechanism that removes physical currency exchange entirely.
+
+\subsubsection{Friction 2: Trust, Transparency, and Discount Verification}
+Respondents indicated significant behavioral challenges regarding financial trust. Users frequently cited the risk of arbitrary overcharging and inconsistent fare collection. One commuter recalled, \textit{``Different fares each time for same route and conductors insisting that they're charging the right fare.''} Another highlighted the predatory nature of manual collection on vulnerable populations, stating, \textit{``They took 50 rupees instead of 25 when I was new in Kathmandu city.''}
+
+
+Furthermore, marginalized groups and students (who comprised the majority of the eligible discount pool in our study) reported consistent anxiety in verifying their government-mandated discount eligibility. Even when presenting valid identification, commuters face pushback. A student noted, \textit{``Sometimes the conductors are suspicious on whether the ID card is authentic or not.''} These responses validate the need for an automated, location-based fare calculation system that removes human discretion and instantly applies Role-Based Access Control (RBAC) discount profiles.
+
+\subsubsection{Friction 3: The Digital Divide and Network Fragility}
+While users expressed a high desire for cashless convenience, they noted the limited adoption and reliability of current mobile payment systems in transit. Respondents expressed frustration over the disconnect between Nepal's retail digital economy and its transit infrastructure. One commuter explained, \textit{``In this world of digitalization many people don't carry cash so we face issue.''}
+
+Attempting to scan a retail QR code requires continuous mobile data, and users reported high stress levels associated with transactions failing mid-commute due to Nepal's patchy urban broadband. The findings suggest that relying on the commuter's personal mobile data plan creates a digital divide, necessitating an ``offline-first'' system that shifts the connectivity burden to the vehicle's infrastructure.
 
 \section{Methodology}
 
@@ -313,47 +337,6 @@ By automating this process, the model eliminates revenue leakage and provides a 
 \caption{User flow block diagram organized by functional phases to ensure readability and logical grouping (Two-column layout).}
 \label{fig:user_flow}
 \end{figure*}
-
-\subsection{Data collection and problem classification}
-This section describes the analytical approach and procedures adopted to gather primary data and the systematic design approach for the classification of the problems.
-\subsubsection{Data Collection} \mbox{} \\
-
-\begin{enumerate}
-
-\item \textbf{Research Instrument Design:} 
-A structured survey questionnaire was developed to collect primary data from the target audience. The questionnaire was designed to obtain both quantitative and qualitative information regarding the challenges faced by users in the current public transportation payment system. The study adopted a mixed-method research approach to ensure comprehensive analysis of user experiences and perceptions.
-\\
-\\
-The questionnaire consisted of:
-\\
-\begin{itemize}
-
-\item \textbf{Closed-ended Questions:} 
-A set of multiple-choice and Likert-scale questions were included in the survey form to obtain measurable responses regarding transportation payment issues, discount verification problems, and user acceptance of digital wallet integration.
-
-\item \textbf{Open-ended Questions:} 
-An open-ended question was included to allow respondents to describe their personal experiences related to cash handling problems, conductor payment issues, or other challenges encountered during public transportation travel.
-\\
-\end{itemize}
-
-\item \textbf{Target Population and Sampling:} The survey targeted regular public transportation users including students, senior citizens, and general commuters.
-\\
-Approximately 29 valid responses were considered for analysis after data screening and verification.
-
-\end{enumerate}
-\subsubsection{Problem classification} \mbox{} \\
-\\
-From the survey analysis, several common transportation payment-related problems were identified, which justify the development of the proposed TransitPay solution. People faced different challenges while commuting in public transportation; the summarized list consists of the following:
-
-\begin{itemize}
-    \item Lack of change availability with conductors during travel
-    \item Risk of overcharging or inconsistent fare collection
-    \item Difficulty in verifying discount eligibility during travel
-    \item Passenger discomfort during manual cash transaction inside crowded buses
-    \item Limited adoption and convenience of cashless payment systems
-    \\
-\end{itemize}
-Apart from these primary issues, the survey responses also indicated general operational and behavioral challenges associated with the current public transportation payment environment. Many users reported stress caused by manual payment handling, lack of transparency in fare calculation, and dependency on physical cash during commuting. The findings collectively suggest the necessity for a secure, automated, and user-friendly digital payment mechanism for public transportation systems.
 
 \subsection{Testing Environment}
 This section thoroughly explains the testing environment and standards of the TransitPay ecosystem, where different measures are considered as factors of tests, listly.
