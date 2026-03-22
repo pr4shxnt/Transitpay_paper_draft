@@ -185,16 +185,16 @@ To address these global challenges locally, recent initiatives in Nepal have att
 
 Beyond fare media, related work has begun to treat transit and mobility infrastructure as shared digital public goods. Bolten and Caspi, for instance, describe a communal, open-data approach to constructing detailed pedestrian networks to support accessibility analysis and inclusive routing at city scale~\cite{bolten2022towards}. Similarly, the BALTO Toolkit positions rider-generated data as a basis for more equitable transit planning and community advocacy in U.S.\ cities~\cite{frias2023balto}. We build on this perspective by proposing fare-collection infrastructure that is designed from the outset to be interoperable across operators and to reduce information asymmetries between commuters, conductors, and vehicle owners.
 
-However, existing NFC-based solutions in Nepal operate strictly as closed-loop systems. A proprietary card issued for one network cannot be utilized on a private microbus, failing to solve the interoperability gap for the average commuter, especially since the National Payment Switch currently lacks a standardized transit API~\cite{nrb2025paymentoversight}. To bypass this fragmentation, commuters frequently attempt to use ubiquitous mobile wallets (such as \textit{eSewa} or \textit{Khalti}) that rely on QR codes. Unfortunately, direct comparisons reveal that manual QR scanning in dynamic transit environments routinely takes over 10 seconds, causing severe passenger stacking at bus doors~\cite{chen2020influence}. Furthermore, because these mobile-first systems lack offline data queuing, they frequently fail when moving vehicles cross network blind spots~\cite{kharel2025digital}. 
+However, existing NFC-based solutions in Nepal operate strictly as closed-loop systems. A proprietary card issued for one network cannot be utilized on a private microbus, failing to solve the interoperability gap for the average commuter, especially since the National Payment Switch currently lacks a standardized transit API~\cite{nrb2025paymentoversight}. To bypass this fragmentation, commuters frequently attempt to use ubiquitous mobile wallets (such as \textit{eSewa} or \textit{Khalti}) that rely on QR codes. Unfortunately, direct comparisons reveal that manual QR scanning in dynamic transit environments routinely takes over 30 seconds, causing severe passenger stacking at bus doors~\cite{chen2020influence}. Furthermore, because these mobile-first systems lack offline data queuing, they frequently fail when moving vehicles cross network blind spots~\cite{kharel2025digital}. 
 
-TransitPay builds upon these foundational efforts by utilizing Host Card Emulation (HCE) to emulate NFC cards via software~\cite{alattar2014host, alliance2014host}. This approach merges the interoperability of a mobile application with the offline resilience and speed of a physical NFC smart card, engineering a solution specifically tailored for Nepal's fragmented and connectivity-constrained transit ecosystem.
+TransitPay builds upon these foundational efforts by utilizing HCE to emulate NFC cards via software~\cite{alattar2014host, alliance2014host}. This approach merges the interoperability of a mobile application with the offline resilience and speed of a physical NFC smart card, engineering a solution specifically tailored for Nepal's fragmented and connectivity-constrained transit ecosystem.
 
 \section{Formative Study and Local Context}
 \label{sec:formative_study}
 The core premise of TransitPay is that sustainable urban computing must directly address local human friction. To transition this project from a theoretical payment gateway into a practical socio-technical intervention, we first needed to map the lived experiences of Nepal's transit users. Through a human-centered design paradigm, we investigated the specific infrastructural limitations and behavioral anxieties that currently block the adoption of digital transit fares.
 
 \subsection{The Kathmandu Transit Ecosystem}
-To contextualize the commuters' experiences, it is essential to understand the physical and operational realities of Kathmandu's informal transit network. The city relies almost entirely on decentralized, semi-formal fleets consisting primarily of 14-seater microbuses, 26-seater minibuses, and three-wheeled electric Safa Tempos~\cite{jica2017kathmandu_transport}. These vehicles are largely managed by independent operators organized into route-based syndicates~\cite{worldbank2013kathmandu}.
+Before contextualizing the commuters' experiences, it is essential to understand the physical and operational realities of Kathmandu's informal transit network. The city relies almost entirely on decentralized, semi-formal fleets consisting primarily of 14-seater microbuses, 26-seater minibuses, and three-wheeled electric Safa Tempos~\cite{jica2017kathmandu_transport}. These vehicles are largely managed by independent operators organized into route-based syndicates~\cite{worldbank2013kathmandu}.
 
 The operational model relies heavily on a two-person crew: a driver and a conductor, locally referred to as a \textit{khalasi} or \textit{sahalachalak}. The conductor is responsible for recruiting passengers by calling out destinations, maximizing vehicle occupancy, and physically navigating an often severely overcrowded aisle to collect cash fares. During peak hours, passenger density routinely exceeds the vehicle's designed capacity. Commuters are frequently forced to stand tightly packed in narrow, low-ceilinged aisles. Within this highly compressed physical environment, the act of payment is not merely a financial transaction but a spatial challenge. Any payment method that introduces latency, whether it is a passenger fumbling for loose change or waiting for a cloud-dependent QR application to authenticate over a weak cellular signal, directly exacerbates the physical discomfort of the entire cabin. This socio-spatial reality necessitates payment interventions that prioritize absolute speed and physical convenience.
 
@@ -205,7 +205,7 @@ We conducted a preliminary, mixed-method formative study targeting regular and f
 The demographic breakdown consisted of 26 undergraduate students, one senior citizen, and five non-student commuters. Among the respondents, 24 utilize public transit regularly. The remaining eight participants reported reducing or completely abandoning their public transit usage, frequently citing systemic frictions as the primary deterrent.
 
 \subsection{Identified Frictions and Problem Classification}
-Through thematic analysis of the survey responses, we classified the commuters' challenges into three primary socio-technical frictions, using an inductive coding approach. The open-ended survey responses were systematically reviewed to identify recurring keywords and emotional indicators associated with the commute. Initial codes included recurring phrases such as ``waiting for change,'' ``network failure,'' ``fake student ID,'' and ``argument over fare.''
+Through thematic analysis of the survey responses, we classified the commuters' challenges into three primary socio-technical frictions, using an inductive coding approach. The open-ended survey responses were systematically reviewed to identify recurring keywords and emotional indicators associated with the commute. Initial codes included recurring phrases such as ``waiting for change,'' ``fake student ID,'' and ``argument over fare.''
 
 These initial codes were then synthesized into broader thematic categories. Instead of treating these issues as isolated operational complaints, we mapped these qualitative themes to extract the root causes of transaction failures. These identified problems directly informed the engineering requirements for the TransitPay architecture, allowing us to translate subjective user frustrations into objective hardware and software interventions.
 
@@ -226,7 +226,7 @@ Attempting to scan a retail QR code requires continuous mobile data, and users r
 
 \section{Socio-Technical System Design}
 
-Traditional engineering approaches to digital payments often prioritize maximum processing power and assume continuous cloud connectivity~\cite{iyengar2024edge}. However, deploying public transit infrastructure in the Global South requires a different paradigm. The TransitPay ecosystem was engineered using a Systems Engineering Design Methodology specifically adapted for resource-constrained environments. By harmonizing affordable IoT hardware, a Host Card Emulation (HCE)~\cite{alliance2014host} enabled mobile client, and a Node.js server, the system is designed to prioritize commuter resilience and digital equity over raw computational complexity.
+Traditional engineering approaches to digital payments often prioritize maximum processing power and assume continuous cloud connectivity~\cite{iyengar2024edge}. However, deploying public transit infrastructure in the Global South requires a different paradigm. The TransitPay ecosystem was engineered using a Systems Engineering Design Methodology specifically adapted for resource-constrained environments. By harmonizing affordable IoT hardware, a HCE~\cite{alliance2014host} enabled mobile client, and a Node.js server, the system is designed to prioritize commuter resilience and digital equity over raw computational complexity.
 
 \subsection{Design Rationale and Requirements}
 
@@ -241,7 +241,7 @@ Rather than forcing users to adapt to a standard retail digital wallet, TransitP
 \subsection{Hardware Architecture for Affordability and Speed}
 To meet the requirement of hardware affordability and rapid processing (Requirement 2), the Point-of-Sale (POS) terminal must bypass expensive, proprietary enterprise validators. The TransitPay POS is built around the ESP8266 (NodeMCU) microcontroller. This specific module was selected for its extreme affordability, low power profile, and integrated Wi-Fi capabilities. By assembling the POS organically from ubiquitous IoT components, the initial capital expenditure deployed per vehicle is drastically lowered, encouraging adoption among independent microbus operators.
 
-The ESP8266 operates in tandem with a PN532 NFC reader. To ensure that lower-income commuters are not digitally excluded by a smartphone-only mandate, the system supports a dual-medium approach. It utilizes Host Card Emulation (HCE) to empower standard Android smartphones to function as transit cards, while concurrently supporting low-cost, physical NFC smart cards for users without digital devices. The architectural block diagram is shown in Figure~\ref{fig:system_block}.
+The ESP8266 operates in tandem with a PN532 NFC reader. To ensure that lower-income commuters are not digitally excluded by a smartphone-only mandate, the system supports a dual-medium approach. It utilizes HCE to empower standard Android smartphones to function as transit cards, while concurrently supporting low-cost, physical NFC smart cards for users without digital devices. The architectural block diagram is shown in Figure~\ref{fig:system_block}.
 
 \begin{figure*}[t]
   \centering
@@ -314,20 +314,6 @@ The ESP8266 operates in tandem with a PN532 NFC reader. To ensure that lower-inc
   \Description{System block diagram of transitpay showing edge computing on the vehicle and asynchronous sync to the cloud.}
 \end{figure*}
 
-
-\subsection{Automated Transparency via the Fair Fare Model}
-To cultivate necessary trust among a commuter base historically reliant on physical cash, the system implements a ``Fair Fare Model'' (FFM). This model addresses the trust deficit and discount disputes (Requirement 3) by completely removing human calculation from the billing process. The ecosystem integrates a NEO-6M GPS module directly into the POS terminal. This module generates precise spatial telemetry, allowing transparent, distance-based fare calculations entirely at the edge.
-
-The operational logic of the FFM relies on a three-step transaction pipeline integrated with the onboard hardware:
-\begin{enumerate}
-\item \textbf{Tap-In:} Upon boarding, the passenger taps their NFC entity against the PN532 module. The NEO-6M simultaneously logs the geographic coordinates of the boarding stop.
-\item \textbf{Tap-Out:} When the passenger reaches their destination and exits, the system captures the alighting stop coordinates.
-\item \textbf{Lookup and Deduction:} The system matches the coordinate pair against a pre-loaded stop database on the ESP8266. The corresponding fare is retrieved from a fixed matrix and deducted instantly.
-\end{enumerate}
-
-\paragraph{\textbf{Real-World Mapping and Fare Matrix}}
-To validate this edge-based lookup mechanism, we physically mapped several high-traffic urban transit corridors in Kathmandu, including the \textit{Pulchowk} to \textit{Ratnapark} and \textit{Machhapokhari} to \textit{Ratnapark} routes. Table~\ref{tab:fare_matrix} demonstrates the localized matrix programmed into the ESP8266 for the \textit{Machhapokhari} route. This specific eight-stop corridor is presented as our primary example because its length and granularity better illustrate the algorithmic complexity of the distance-based billing compared to shorter routes. By storing this matrix locally, the terminal can instantly cross-reference the boarding and alighting coordinates to deduct the exact government-mandated fare without requiring any cloud processing or conductor intervention.
-
 \begin{table*}[t]
   \centering
   \caption{Machhapokhari to Ratnapark Route Fare Matrix (NPR) - Student Rate}
@@ -350,15 +336,18 @@ To validate this edge-based lookup mechanism, we physically mapped several high-
   }
 \end{table*}
 
+\subsection{Automated Transparency via the Fair Fare Model}
+To cultivate necessary trust among a commuter base historically reliant on physical cash, the system implements a ``Fair Fare Model'' (FFM). This model addresses the trust deficit and discount disputes (Requirement 3) by completely removing human calculation from the billing process. The ecosystem integrates a NEO-6M GPS module directly into the POS terminal. This module generates precise spatial telemetry, allowing transparent, distance-based fare calculations entirely at the edge.
 
-\subsection{The Commuter Interaction Pipeline}
-The resulting integration of this hardware and spatial tracking creates a frictionless pipeline designed to preserve commuter dignity and eliminate boarding bottlenecks. The pipeline has three phases, also shown in Figure~\ref{fig:user_flow}.
+The operational logic of the FFM relies on a three-step transaction pipeline integrated with the onboard hardware:
+\begin{enumerate}
+\item \textbf{Tap-In:} Upon boarding, the passenger taps their NFC entity against the PN532 module. The NEO-6M simultaneously logs the geographic coordinates of the boarding stop.
+\item \textbf{Tap-Out:} When the passenger reaches their destination and exits, the system captures the alighting stop coordinates.
+\item \textbf{Lookup and Deduction:} The system matches the coordinate pair against a pre-loaded stop database on the ESP8266. The corresponding fare is retrieved from a fixed matrix and deducted instantly.
+\end{enumerate}
 
-\textbf{Phase 1: Frictionless Boarding.} Upon entry, commuters intuitively wave their NFC device near the terminal. The terminal instantly authenticates the card and verifies sufficient minimum balance locally, shielding the commuter from potential cellular network dropouts during boarding. To ease accessibility for all users, the system provides immediate audio-visual confirmation, such as a localized beep and a green LED indicator. Concurrently, the GPS module silently logs the precise geographical coordinates of the boarding event to initiate the equitable cycle.
-
-\textbf{Phase 2: The Commute.} Passengers seamlessly traverse their transit route without the disruption of a conductor physically navigating a severely overcrowded aisle to collect loose cash. This stage significantly enhances passenger comfort, alleviating the persistent stress and security concerns associated with manual cash handling during peak urban commuting hours.
-
-\textbf{Phase 3: Automated Alighting and Reconciliation.} As the commuter exits the microbus, a secondary brief tap finalizes the trip footprint. The exact required amount is deducted, averting overcharging and verbal disputes. If a commuter fails to tap out upon exiting, the system defaults to deducting the maximum route fare to incentivize compliance. Crucially, the finalized receipt is queued locally. When the transit vehicle transitions from a cellular dead zone back into a strong network range, the offline transaction logs cached resiliently in the ESP8266 are seamlessly synchronized with the cloud ledger to guarantee an airtight digital audit trail.
+\paragraph{\textbf{Real-World Mapping and Fare Matrix}}
+To validate this edge-based lookup mechanism, we physically mapped several high-traffic urban transit corridors in Kathmandu, including the \textit{Pulchowk} to \textit{Ratnapark} and \textit{Machhapokhari} to \textit{Ratnapark} routes. Table~\ref{tab:fare_matrix} demonstrates the localized matrix programmed into the ESP8266 for the \textit{Machhapokhari} route. This specific eight-stop corridor is presented as our primary example because its length and granularity better illustrate the algorithmic complexity of the distance-based billing compared to shorter routes. By storing this matrix locally, the terminal can instantly cross-reference the boarding and alighting coordinates to deduct the exact government-mandated fare without requiring any cloud processing or conductor intervention.
 
 \begin{figure*}[t]
   \centering
@@ -427,6 +416,15 @@ The resulting integration of this hardware and spatial tracking creates a fricti
   \label{fig:user_flow}
 \end{figure*}
 
+\subsection{The Commuter Interaction Pipeline}
+The resulting integration of this hardware and spatial tracking creates a frictionless pipeline designed to preserve commuter dignity and eliminate boarding bottlenecks. The pipeline has three phases, also shown in Figure~\ref{fig:user_flow}.
+
+\textbf{Phase 1: Frictionless Boarding.} Upon entry, commuters intuitively wave their NFC device near the terminal. The terminal instantly authenticates the card and verifies sufficient minimum balance locally, shielding the commuter from potential cellular network dropouts during boarding. To ease accessibility for all users, the system provides immediate audio-visual confirmation, such as a localized beep and a green LED indicator. Concurrently, the GPS module silently logs the precise geographical coordinates of the boarding event to initiate the equitable cycle.
+
+\textbf{Phase 2: The Commute.} Passengers seamlessly traverse their transit route without the disruption of a conductor physically navigating a severely overcrowded aisle to collect loose cash. This stage significantly enhances passenger comfort, alleviating the persistent stress and security concerns associated with manual cash handling during peak urban commuting hours.
+
+\textbf{Phase 3: Automated Alighting and Reconciliation.} As the commuter exits the microbus, a secondary brief tap finalizes the trip footprint. The exact required amount is deducted, averting overcharging and verbal disputes. If a commuter fails to tap out upon exiting, the system defaults to deducting the maximum route fare to incentivize compliance. Crucially, the finalized receipt is queued locally. When the transit vehicle transitions from a cellular dead zone back into a strong network range, the offline transaction logs cached in the ESP8266 are synchronized with the cloud ledger to guarantee an airtight digital audit trail.
+
 \section{System Evaluation and Results}
 We designed a mixed-environment evaluation framework to assess whether TransitPay successfully resolves the socio-technical frictions identified in our formative study. The prototype was evaluated against both controlled laboratory benchmarks and real-world urban transit conditions.
 
@@ -450,7 +448,7 @@ The comparative evaluation between the sandboxed TransitPay architecture and the
 
 \subsection{Performance Results and Interpretation}
 
-The comparative performance between TransitPay and the baseline QR-based digital wallets (\textit{eSewa} and \textit{Khalti}) demonstrates significant operational advantages in resource-constrained transit environments.
+The comparative performance between TransitPay and the baseline QR-based digital wallets (\textit{eSewa} and \textit{Khalti}) demonstrates significant operational advantages in resource-constrained transit environments (Table~\ref{tab:comparison}).
 
 \subsubsection{Latency and the Boarding Bottleneck}
 In informal transit environments, cumulative boarding delays directly exacerbate physical crowding. Transaction speeds were measured across varying typical network conditions to quantify TransitPay's impact on mitigating these delays:
@@ -485,7 +483,7 @@ While traditional digital wallets struggle with patchy broadband, TransitPay pro
 The security of the TransitPay ecosystem is enforced through a multi-layered cryptographic approach. The POS terminal issues an Application Protocol Data Unit (APDU) challenge to the user's NFC entity. The entity signs the payload using its unique private key, which is decrypted by the POS using a corresponding embedded public key. Furthermore, the physical constraints of NFC technology limit communication to approximately 4 cm, mitigating remote eavesdropping and man-in-the-middle attacks.
 
 \subsubsection{Fair Fare Model Accuracy}
-By seamlessly automating fare calculations via the GPS-linked Fair Fare Model, TransitPay enforces transparent pricing frameworks. During field evaluations, the automated schema successfully bridged spatial mapping to equitable financial deductions. Table~\ref{tab:tapped_in_and_tapped_out} illustrates the system's ability to accurately cross-reference coordinates or reject invalid routes.
+By automating fare calculations via the GPS-linked Fair Fare Model, TransitPay enforces transparent pricing frameworks. During field evaluations, the automated schema successfully bridged spatial mapping to equitable financial deductions. Table~\ref{tab:tapped_in_and_tapped_out} illustrates the system's ability to accurately cross-reference coordinates or reject invalid routes.
 
 \begin{table}[t]
   \centering
@@ -545,7 +543,7 @@ Table~\ref{tab:production_cost} details the unit production cost of a single Tra
 
 
 
-By reducing the capital requirement by over 90 percent compared to traditional transit hardware, this architecture significantly lowers the barrier to entry for widespread fleet adoption. Furthermore, because the architecture relies on the users' existing smartphones via Host Card Emulation (HCE), the system avoids the massive logistical costs associated with minting and distributing millions of proprietary closed-loop smart cards.
+By reducing the capital requirement by over 90 percent compared to traditional transit hardware, this architecture significantly lowers the barrier to entry for widespread fleet adoption. Furthermore, because the architecture relies on the users' existing smartphones via HCE, the system avoids the massive logistical costs associated with minting and distributing millions of proprietary closed-loop smart cards.
 
 \section{Discussion and Implications}
 \subsection{Alignment Between Identified Problems and Proposed Solutions}
@@ -600,12 +598,12 @@ To enable sustainable deployment and scalability of offline-first transit paymen
 \end{enumerate}
 
 \section{Limitations}
-This study has both technical and non-technical limitations. On the technical side, Apple does not support the development of Host Card Emulation (HCE) on the iOS platform outside the European Economic Area (EEA). This means developers in regions such as Nepal must rely on Apple Pay or Apple Wallet for contactless NFC transactions, rather than implementing their own HCE-based payment or ticketing solutions directly on iOS~\cite{apple2024hce}. However, this makes it more difficult to access Host Card Emulation on iOS devices, as the Apple Pay feature itself is disabled for Nepal-registered Apple IDs and Nepali cards. 
+This study has both technical and non-technical limitations. On the technical side, Apple does not support the development of HCE on the iOS platform outside the European Economic Area (EEA). This means developers in regions such as Nepal must rely on Apple Pay or Apple Wallet for contactless NFC transactions, rather than implementing their own HCE-based payment or ticketing solutions directly on iOS~\cite{apple2024hce}. However, this makes it more difficult to access Host Card Emulation on iOS devices, as the Apple Pay feature itself is disabled for Nepal-registered Apple IDs and Nepali cards. 
 
 Furthermore, the system lacks on-ground testing in real-world public transport environments. Specifically, the prototype could not be tested with the surveyed users who were experiencing the identified problems, which could have provided valuable insights into its performance and usability under actual operating conditions. From a non-technical perspective, the research was constrained by budgetary limitations, which prevented a more longitudinal analysis of the observed phenomena.
 
 \section{Conclusion}
-The modernization of public transit in the Global South cannot depend on simply replicating retail digital wallet systems. Our formative study and field evaluations in Kathmandu reveal that imposing cloud-dependent payment infrastructures on resource-constrained transit networks worsens digital exclusion and increases passenger friction. TransitPay offers a human-centered alternative for urban mobility. By shifting computational and connectivity demands from commuters' smartphones to affordable edge infrastructure, the system reconciles digital convenience with on-the-ground realities. The integration of ubiquitous IoT hardware with a localized Fair Fare Model shows that high latency and arbitrary cash disputes are not inevitable features of informal transit. Achieving a 91.4 percent reduction in boarding transaction times and ensuring full fault tolerance in cellular dead zones, the architecture protects both the economic margins of operators and the daily dignity of marginalized commuters. Hence, TransitPay demonstrates that true digital equity in sustainable societies emerges not by forcing commuters to conform to fragile technologies, but by creating resilient systems that respond to the realities of everyday life.
+The modernization of public transit in the Global South cannot depend on simply replicating retail digital wallet systems. Our formative study and field evaluations in Kathmandu reveal that imposing cloud-dependent payment infrastructures on resource-constrained transit networks worsens digital exclusion and increases passenger friction. TransitPay offers a human-centered alternative for urban mobility. By shifting computational and connectivity demands from commuters' smartphones to affordable edge infrastructure, the system reconciles digital convenience with on-the-ground realities. The integration of IoT hardware with a localized Fair Fare Model shows that high latency and arbitrary cash disputes are not inevitable features of informal transit. Achieving a 94 percent reduction in boarding transaction times and ensuring full fault tolerance in cellular dead zones, the architecture protects both the economic margins of operators and the daily dignity of marginalized commuters. Hence, TransitPay demonstrates that true digital equity in sustainable societies emerges not by forcing commuters to conform to fragile technologies, but by creating resilient systems that respond to the realities of everyday life.
 
 
 
