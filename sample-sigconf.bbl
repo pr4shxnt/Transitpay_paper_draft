@@ -1,0 +1,449 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{41}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Alattar and Achemlal(2014)]%
+        {alattar2014host}
+\bibfield{author}{\bibinfo{person}{Mouhannad Alattar} {and} \bibinfo{person}{Mohammed Achemlal}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Host-based card emulation: Development, security, and ecosystem impact analysis}. In \bibinfo{booktitle}{\emph{2014 IEEE Intl Conf on High Performance Computing and Communications, 2014 IEEE 6th Intl Symp on Cyberspace Safety and Security, 2014 IEEE 11th Intl Conf on Embedded Software and Syst (HPCC, CSS, ICESS)}}. IEEE, \bibinfo{pages}{506--509}.
+\newblock
+
+
+\bibitem[Alliance et~al\mbox{.}(2014)]%
+        {alliance2014host}
+\bibfield{author}{\bibinfo{person}{Smart~Card Alliance} {et~al\mbox{.}}} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Host card emulation (hce) 101}.
+\newblock \bibinfo{journal}{\emph{A Smart Card Alliance Mobile and NFC Council White Paper}} (\bibinfo{year}{2014}).
+\newblock
+
+
+\bibitem[Alok et~al\mbox{.}(2023)]%
+        {alok2023khep}
+\bibfield{author}{\bibinfo{person}{Aditto~Baidya Alok}, \bibinfo{person}{Hasibul Sakib}, \bibinfo{person}{Shamsil~Arafin Ullah}, \bibinfo{person}{Fardin Huq}, \bibinfo{person}{Riya Ghosh}, \bibinfo{person}{Joyanta~Jyoti Mondal}, \bibinfo{person}{Md~Sadiqul~Islam Sakif}, {and} \bibinfo{person}{Jannatun Noor}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{‘Khep’: Exploring factors that influence the preference of contractual rides to ride-sharing apps in Bangladesh}. In \bibinfo{booktitle}{\emph{Proceedings of the 6th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies}}. \bibinfo{pages}{43--53}.
+\newblock
+
+
+\bibitem[Aryal et~al\mbox{.}(2022)]%
+        {aryal2022strong}
+\bibfield{author}{\bibinfo{person}{Tulsi~Ram Aryal}, \bibinfo{person}{Masaru Ichihashi}, {and} \bibinfo{person}{Shinji Kaneko}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{How strong is demand for public transport service in Nepal? A case study of Kathmandu using a choice-based conjoint experiment}.
+\newblock \bibinfo{journal}{\emph{Journal of Economic Structures}} \bibinfo{volume}{11}, \bibinfo{number}{1} (\bibinfo{year}{2022}), \bibinfo{pages}{29}.
+\newblock
+
+
+\bibitem[Bolten and Caspi(2022)]%
+        {bolten2022towards}
+\bibfield{author}{\bibinfo{person}{Nicholas Bolten} {and} \bibinfo{person}{Anat Caspi}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Towards operationalizing the communal production and management of public (open) data: a pedestrian network case study: A pedestrian network case study in operationalizing communal open data}. In \bibinfo{booktitle}{\emph{Proceedings of the 5th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies}}. \bibinfo{pages}{232--247}.
+\newblock
+
+
+\bibitem[{CGAP}(2021)]%
+        {cgsb2021mobilewallets}
+\bibfield{author}{\bibinfo{person}{{CGAP}}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Mobile Wallets and Interoperability in the Global South}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Consultative Group to Assist the Poor (CGAP)}.
+\newblock
+\newblock
+\shownote{Available at: https://www.cgap.org}.
+
+
+\bibitem[Chen et~al\mbox{.}(2020)]%
+        {chen2020influence}
+\bibfield{author}{\bibinfo{person}{Guojun Chen}, \bibinfo{person}{Weilun Chen}, \bibinfo{person}{Shuyang Zhang}, \bibinfo{person}{Dong Zhang}, {and} \bibinfo{person}{Haode Liu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Influence of mobile payment on bus boarding service time}.
+\newblock \bibinfo{journal}{\emph{Journal of Advanced Transportation}} \bibinfo{volume}{2020}, \bibinfo{number}{1} (\bibinfo{year}{2020}), \bibinfo{pages}{9635853}.
+\newblock
+
+
+\bibitem[De~Seta(2023)]%
+        {de2023qr}
+\bibfield{author}{\bibinfo{person}{Gabriele De~Seta}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{QR code: The global making of an infrastructural gateway}.
+\newblock \bibinfo{journal}{\emph{Global Media and China}} \bibinfo{volume}{8}, \bibinfo{number}{3} (\bibinfo{year}{2023}), \bibinfo{pages}{362--380}.
+\newblock
+
+
+\bibitem[{Espressif Systems}(2015)]%
+        {esp8266soc}
+\bibfield{author}{\bibinfo{person}{{Espressif Systems}}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{ESP8266EX Datasheet}}.
+\newblock Espressif Systems.
+\newblock
+\urldef\tempurl%
+\url{https://www.espressif.com/en/products/socs/esp8266/resources}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[{Fintech International Pvt. Ltd.}(2024)]%
+        {fintech2023yatra}
+\bibfield{author}{\bibinfo{person}{{Fintech International Pvt. Ltd.}}} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Yatra Card}.
+\newblock
+\urldef\tempurl%
+\url{https://fintechinternational.com.np/product/yatra-card}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[Fin{\v{z}}gar and Trebar(2011)]%
+        {finvzgar2011use}
+\bibfield{author}{\bibinfo{person}{Luka Fin{\v{z}}gar} {and} \bibinfo{person}{Mira Trebar}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Use of NFC and QR code identification in an electronic ticket system for public transport}. In \bibinfo{booktitle}{\emph{SoftCOM 2011, 19th International Conference on Software, Telecommunications and Computer Networks}}. IEEE, \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[Frias-Martinez et~al\mbox{.}(2023)]%
+        {frias2023balto}
+\bibfield{author}{\bibinfo{person}{Vanessa Frias-Martinez}, \bibinfo{person}{Saad Abrar}, \bibinfo{person}{Naman Awasthi}, \bibinfo{person}{Sunyup Park}, {and} \bibinfo{person}{Jessica Vitak}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{The BALTO toolkit-a new approach to ethical and sustainable data collection for equitable public transit}. In \bibinfo{booktitle}{\emph{Proceedings of the 6th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies}}. \bibinfo{pages}{129--133}.
+\newblock
+
+
+\bibitem[Ghimire(2008)]%
+        {ghimire2008assessment}
+\bibfield{author}{\bibinfo{person}{Himamshu Ghimire}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \emph{\bibinfo{title}{An assessment of the environmental problems in the Kathmandu valley of Nepal}}.
+\newblock \bibinfo{thesistype}{Master's\ thesis}. \bibinfo{school}{Miami University}.
+\newblock
+
+
+\bibitem[Gowda and R.(2024)]%
+        {gowda_upi_2024}
+\bibfield{author}{\bibinfo{person}{Renute Gowda} {and} \bibinfo{person}{S. R.}} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{An Analysis of {BMTC}'s Adoption of {UPI} Based Payment Systems}.
+\newblock \bibinfo{journal}{\emph{International Journal of Research Publication and Reviews (IJRPR)}} \bibinfo{volume}{6}, \bibinfo{number}{9} (\bibinfo{year}{2024}), \bibinfo{pages}{577--585}.
+\newblock
+
+
+\bibitem[Gupta et~al\mbox{.}(2022)]%
+        {gupta2022m}
+\bibfield{author}{\bibinfo{person}{Yash~Kumar Gupta}, \bibinfo{person}{Girish Jeswani}, {and} \bibinfo{person}{Olan Pinto}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{M-Commerce offline payment}.
+\newblock \bibinfo{journal}{\emph{SN Computer Science}} \bibinfo{volume}{3}, \bibinfo{number}{1} (\bibinfo{year}{2022}), \bibinfo{pages}{100}.
+\newblock
+
+
+\bibitem[Inc.(2024)]%
+        {apple2024hce}
+\bibfield{author}{\bibinfo{person}{Apple Inc.}} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{HCE-based contactless NFC transactions for apps in the European economic area (EEA)}.
+\newblock
+\urldef\tempurl%
+\url{https://developer.apple.com/support/hce-transactions-in-apps/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Industriapart}(2024)]%
+        {Industriapart2024Durability}
+\bibfield{author}{\bibinfo{person}{{Industriapart}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The Durability of Electronics: Myth and Reality}}.
+\newblock
+\urldef\tempurl%
+\url{https://www.industrypart.com/blog-durability-of-electronics}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-21}.
+
+
+\bibitem[Iyengar and Pearson(2024)]%
+        {iyengar2024edge}
+\bibfield{author}{\bibinfo{person}{Ashok Iyengar} {and} \bibinfo{person}{Joseph Pearson}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Edge Computing Patterns for Solution Architects: Learn methods and principles of resilient distributed application architectures from hybrid cloud to far edge}}.
+\newblock \bibinfo{publisher}{Packt Publishing Ltd}.
+\newblock
+
+
+\bibitem[{Japan International Cooperation Agency (JICA)}(2017)]%
+        {jica2017kathmandu_transport}
+\bibfield{author}{\bibinfo{person}{{Japan International Cooperation Agency (JICA)}}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{The Project on Urban Transport Improvement for Kathmandu Valley in Federal Democratic Republic of Nepal: Final Report}.
+\newblock
+\urldef\tempurl%
+\url{https://openjicareport.jica.go.jp/pdf/12289674.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[{Juniper Research}(2022)]%
+        {juniper2022digital}
+\bibfield{author}{\bibinfo{person}{{Juniper Research}}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Digital Wallet Users to Exceed 5 Billion Globally by 2026}.
+\newblock
+\urldef\tempurl%
+\url{https://www.juniperresearch.com/press/digital-wallet-users-exceed-5bn-globally-2026/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[Kandel(2024)]%
+        {kandel2024financial}
+\bibfield{author}{\bibinfo{person}{Bishnu~Prasad Kandel}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \emph{\bibinfo{title}{FINANCIAL TECHNOLOGY AND PAYMENT SYSTEMS IN NEPAL}}.
+\newblock \bibinfo{thesistype}{Ph.\,D. Dissertation}. \bibinfo{school}{Shanker Dev Campus}.
+\newblock
+
+
+\bibitem[KC(2026)]%
+        {KC_2026}
+\bibfield{author}{\bibinfo{person}{Arjan KC}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Case study: Mobile-first payments – ESEWA \& khalti infrastructure choices}.
+\newblock
+\urldef\tempurl%
+\url{https://www.arjankc.com.np/blog/notes/it204/u3-case-mobile-first-wallets-esewa-khalti/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kharel(2025)]%
+        {kharel2025digital}
+\bibfield{author}{\bibinfo{person}{Ram~Sharan Kharel}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Digital Economy and Financial Innovation: Implication for Monetary Policy in Nepal}.
+\newblock
+\urldef\tempurl%
+\url{https://giwmscdntwo.gov.np/media/pdf_upload/Digital%20Economy%20and%20Financial%20Innovation%20-%20Implication%20for%20Monetary%20policy%20in%20Nepal%20-%20Ram%20Sharan%20Kharel_oaya6ro.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Presentation for Economic Policy Dialogue, Ministry of Finance, Nepal}.
+
+
+\bibitem[Klein(2023)]%
+        {klein2023transitpayments}
+\bibfield{author}{\bibinfo{person}{Daniel Klein}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{How Better Payment Systems Can Improve Public Transit}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Brookings Institution}, \bibinfo{address}{Washington, DC}.
+\newblock
+\urldef\tempurl%
+\url{https://www.brookings.edu/wp-content/uploads/2023/01/20230109_CRM_Klein_TransitPayments_final1.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Manohar et~al\mbox{.}(2022)]%
+        {IJCRT2022VehicleIoT}
+\bibfield{author}{\bibinfo{person}{Adithya G~S Manohar}, \bibinfo{person}{S Anupama}, {and} \bibinfo{person}{C Shakuntala}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Vehicle Health Monitoring System with IoT Applications}.
+\newblock \bibinfo{journal}{\emph{International Journal of Creative Research Thoughts (IJCRT)}} \bibinfo{volume}{10}, \bibinfo{number}{9} (\bibinfo{date}{September} \bibinfo{year}{2022}).
+\newblock
+\showISSN{2320-2882}
+\urldef\tempurl%
+\url{https://ijcrt.org/papers/IJCRT2209116.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Nepal Economic Forum}(2023)]%
+        {nepal_ef_dp_2023}
+\bibfield{author}{\bibinfo{person}{{Nepal Economic Forum}}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The Digital Payment System in Nepal: From Cash to Cashless Economy}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Nepal Economic Forum}.
+\newblock
+\newblock
+\shownote{Available at: https://nepaleconomicforum.org/the-digital-payment-system-in-nepal-from-cash-to-cashless-economy/}.
+
+
+\bibitem[{Nepal Rastra Bank, Payment Systems Department}(2025)]%
+        {nrb2025paymentoversight}
+\bibfield{author}{\bibinfo{person}{{Nepal Rastra Bank, Payment Systems Department}}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Payment Systems Oversight Report 2023–24}.
+\newblock
+\urldef\tempurl%
+\url{https://www.nrb.org.np/contents/uploads/2025/01/Payment-Oversight-Report-2023-24.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[{NXP Semiconductors}(2016)]%
+        {nxp2016pn532}
+\bibfield{author}{\bibinfo{person}{{NXP Semiconductors}}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{PN532/C1 Near Field Communication (NFC) Controller: Product Data Sheet}}.
+\newblock NXP Semiconductors.
+\newblock
+\urldef\tempurl%
+\url{https://www.nxp.com/docs/en/nxp/data-sheets/PN532_C1.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[{O-CITY}(2020)]%
+        {oc_city_matatu_2020}
+\bibfield{author}{\bibinfo{person}{{O-CITY}}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Contactless Payments Come to Nairobi's Matatu Bus Networks}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{ICAV Cluster / O‑CITY (BPC)}.
+\newblock
+\newblock
+\shownote{Available at: https://icavcluster.co.uk/contactless-payments-come-to-nairobis-matatu-bus-networks/}.
+
+
+\bibitem[Planet(2025)]%
+        {VoltageDrop12V2025}
+\bibfield{author}{\bibinfo{person}{12~Volt Planet}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{What Is Voltage Drop and Why It Matters in 12V and 24V Systems}}.
+\newblock
+\urldef\tempurl%
+\url{https://www.12voltplanet.co.uk/news/what-is-voltage-drop-and-why-it-matters-in-12v-and-24v-systems.html}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026‑03‑21}.
+
+
+\bibitem[Sharma and Pradhananga(2021)]%
+        {sharma2021passengers}
+\bibfield{author}{\bibinfo{person}{Samiksha Sharma} {and} \bibinfo{person}{Rojee Pradhananga}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Passengers’ perception towards quality of public transportation services in Kathmandu valley}. In \bibinfo{booktitle}{\emph{Proceedings of 10th IOE Graduate Conference}}, Vol.~\bibinfo{volume}{8914}. \bibinfo{pages}{596--603}.
+\newblock
+
+
+\bibitem[Singh(2020)]%
+        {singh2020near}
+\bibfield{author}{\bibinfo{person}{Neeraj~Kumar Singh}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Near-field communication (NFC): an alternative to RFID in libraries}.
+\newblock \bibinfo{journal}{\emph{Information technology and libraries}} \bibinfo{volume}{39}, \bibinfo{number}{2} (\bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[{South Centre}(2025)]%
+        {southcentre_dpi_2025}
+\bibfield{author}{\bibinfo{person}{{South Centre}}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Taking Forward Digital Public Infrastructure for the Global South}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport} Policy Brief 146. \bibinfo{institution}{South Centre}.
+\newblock
+\newblock
+\shownote{Available at: https://www.southcentre.int}.
+
+
+\bibitem[Suri and Jack(2016)]%
+        {suri_jack_2016}
+\bibfield{author}{\bibinfo{person}{Tavneet Suri} {and} \bibinfo{person}{William Jack}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{The Long-Run Poverty and Gender Impacts of Mobile Money}.
+\newblock \bibinfo{journal}{\emph{Science}} \bibinfo{volume}{354}, \bibinfo{number}{6317} (\bibinfo{year}{2016}), \bibinfo{pages}{1288--1292}.
+\newblock
+\href{https://doi.org/10.1126/science.aah5298}{doi:\nolinkurl{10.1126/science.aah5298}}
+
+
+\bibitem[Tamang and Aryal(2024)]%
+        {tamang_aryal_2024}
+\bibfield{author}{\bibinfo{person}{Bikash Tamang} {and} \bibinfo{person}{Surya~B. Aryal}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Adaptation and Impact of {QR} Code Payment System in Kathmandu Valley}.
+\newblock \bibinfo{journal}{\emph{Nepal Business Journal}} \bibinfo{volume}{6}, \bibinfo{number}{4} (\bibinfo{year}{2024}), \bibinfo{pages}{1--11}.
+\newblock
+\newblock
+\shownote{Available at: https://lbef.org/journal/6-4/download/6-4-1-11.pdf}.
+
+
+\bibitem[{The Annapurna Express}(2026)]%
+        {annapurnaexpress2026article}
+\bibfield{author}{\bibinfo{person}{{The Annapurna Express}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Article on Annapurna Express}.
+\newblock
+\urldef\tempurl%
+\url{https://annapurna-express.prixa.net/story/52490/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-03-13}.
+
+
+\bibitem[Townsend(2019)]%
+        {townsend2019distributed}
+\bibfield{author}{\bibinfo{person}{Robert~M Townsend}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Distributed ledgers: Innovation and regulation in financial infrastructure and payment systems}.
+\newblock \bibinfo{journal}{\emph{URL: http://www.robertmtownsend.net/sites/default/files/files/papers/working \_papers/Dis tributed\% 20Ledgers-first\% 20circulation-041819. pdf}} (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Umar and Argungu(2025)]%
+        {umar2025offline}
+\bibfield{author}{\bibinfo{person}{Ibrahim Umar} {and} \bibinfo{person}{Kasim~Abubakar Argungu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Offline Capable Mobile Learning Solutions for Low Connectivity Regions}.
+\newblock \bibinfo{journal}{\emph{International Journal of Sustainable Social Science (IJSSS)}} \bibinfo{volume}{3}, \bibinfo{number}{5} (\bibinfo{year}{2025}), \bibinfo{pages}{337--354}.
+\newblock
+
+
+\bibitem[{World Bank}(2013)]%
+        {worldbank2013kathmandu}
+\bibfield{author}{\bibinfo{person}{{World Bank}}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Gender and Public Transport: Kathmandu, Nepal}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{The World Bank}, \bibinfo{address}{Washington, DC}.
+\newblock
+\urldef\tempurl%
+\url{https://openknowledge.worldbank.org/handle/10986/17872}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{World Bank}(2021)]%
+        {worldbank2021fare}
+\bibfield{author}{\bibinfo{person}{{World Bank}}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Innovation in Fare Collection Systems for Public Transport in African Cities}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{The World Bank}, \bibinfo{address}{Washington, DC}.
+\newblock
+\urldef\tempurl%
+\url{https://openknowledge.worldbank.org/handle/10986/35791}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Worldline}(2025)]%
+        {worldline_abt_2025}
+\bibfield{author}{\bibinfo{person}{{Worldline}}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Eight Trends Shaping the Future of Public Transit Payments}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Worldline}.
+\newblock
+\newblock
+\shownote{White Paper. Available at: https://www.worldline.com}.
+
+
+\end{thebibliography}
